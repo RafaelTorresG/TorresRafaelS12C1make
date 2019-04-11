@@ -3,7 +3,7 @@ resultados.pdf : resultados.tex plot.pdf plot1.pdf
 plot.pdf : plotdatos.py datos.dat
 	python plotdatos.py
 datos.dat : makedatos.py
-	makedatos.py >> datos.dat
+	python makedatos.py >> datos.dat
 plot1.pdf : plotdatos1.py datos1.dat
 	python plotdatos1.py
 datos1.dat : a.out
